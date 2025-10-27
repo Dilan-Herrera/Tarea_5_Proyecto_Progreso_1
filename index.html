@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arquitectura & Diseño</title>
+
+  <!-- Preconexiones y fuente externa (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Hojas de estilo del proyecto -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="body__container">
+    <!-- =========================
+         HEADER (navegación + hero)
+         ========================= -->
+    <header class="header">
+      <!-- Barra de navegación principal -->
+      <nav class="nav">
+        <!-- Lista de enlaces de navegación -->
+        <ul class="nav__list">
+          <li><a class="nav__item nav__item--active">Home</a></li>
+          <li><a class="nav__item">Blog</a></li>
+          <li><a class="nav__item">Services</a></li>
+          <li><a class="nav__item">About Us</a></li>
+          <li><a class="nav__item">Contact Us</a></li>
+        </ul>
+
+        <!-- Ícono de menú (hamburguesa) para vista móvil -->
+        <div class="nav__menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
+      <!-- Sección hero con imagen de portada y overlay -->
+      <section class="hero">
+        <img src="images/livingroom.jpg" alt="Interior elegante" class="hero__image">
+        <div class="hero__overlay"></div>
+      </section>
+    </header>
+
+    <!-- ==============
+         CONTENIDO MAIN
+         ============== -->
+    <main class="main">
+      <!-- =========================
+           PROJECTS: tarjetas de casos
+           ========================= -->
+      <section class="projects">
+        <div class="projects__grid">
+          <!-- Tarjeta 01 -->
+          <article class="card">
+            <h3 class="card__number">01</h3>
+            <p class="card__type">RESIDENTIAL</p>
+            <img src="images/project1.jpg" alt="Proyecto 1" class="card__image">
+            <h4 class="card__title">Transforming Homes and Creating Dream Spaces</h4>
+            <p class="card__text">
+              From remodeling and new home construction to home studios and shed structures. We are passionate about helping homeowners create the...
+            </p>
+            <button class="card__button">Contact Us</button>
+          </article>
+
+          <!-- Tarjeta 02 -->
+          <article class="card">
+            <h3 class="card__number">02</h3>
+            <p class="card__type">RESIDENTIAL</p>
+            <img src="images/project2.jpg" alt="Proyecto 2" class="card__image">
+            <h4 class="card__title">Transforming Homes and Creating Dream Spaces</h4>
+            <p class="card__text">
+              From remodeling and new home construction to home studios and shed structures. We are passionate about helping homeowners create the...
+            </p>
+            <button class="card__button">Contact Us</button>
+          </article>
+
+          <!-- Tarjeta 03 -->
+          <article class="card">
+            <h3 class="card__number">03</h3>
+            <p class="card__type">RESIDENTIAL</p>
+            <img src="images/project3.jpg" alt="Proyecto 3" class="card__image">
+            <h4 class="card__title">Transforming Homes and Creating Dream Spaces</h4>
+            <p class="card__text">
+              From remodeling and new home construction to home studios and shed structures. We are passionate about helping homeowners create the...
+            </p>
+            <button class="card__button">Contact Us</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- =========================
+           ABOUT: presentación empresa
+           ========================= -->
+      <section class="about">
+        <!-- Imagen lateral de la sección About -->
+        <div class="about__image">
+          <img src="images/about.jpg" alt="Modern House">
+        </div>
+
+        <!-- Contenido textual de la sección About -->
+        <div class="about__content">
+          <h2 class="about__title">Lorem ipsum dolor sit amet<br>dolor sit amet</h2>
+          <p class="about__intro">
+            <strong>Welcome to [website name]</strong>, your one-stop destination for all things home improvement.
+          </p>
+          <p class="about__text">
+            From remodeling and new home construction to home studios and shed structures. We are passionate about helping homeowners create the spaces they’ve always dreamed of, and we have the expertise and resources to make it happen.
+          </p>
+          <button class="about__button">Contact Us</button>
+        </div>
+      </section>
+
+      <!-- ======================================
+           COMMUNITY: buscador + newsletter center
+           ====================================== -->
+      <section class="community">
+        <!-- Capa oscura de fondo para contraste -->
+        <div class="community__overlay"></div>
+
+        <!-- Contenedor de contenidos (títulos, form, newsletter) -->
+        <div class="community__content">
+          <h2 class="community__title">Find Your Community</h2>
+
+          <!-- Formulario de búsqueda con 3 selects y botón -->
+          <form class="community__search">
+            <select class="community__field">
+              <option>Project Type</option>
+              <option>Apartment</option>
+              <option>House</option>
+            </select>
+
+            <select class="community__field">
+              <option>Location</option>
+              <option>Columbus</option>
+              <option>New York</option>
+              <option>Miami</option>
+            </select>
+
+            <select class="community__field">
+              <option>Max Price</option>
+              <option>$1000</option>
+              <option>$2000</option>
+              <option>$5000</option>
+            </select>
+
+            <button class="community__button">Search</button>
+          </form>
+
+          <!-- Bloque de suscripción al newsletter -->
+          <div class="community__newsletter">
+            <p class="community__subtitle">Subscribe Our Newsletter</p>
+            <div class="community__subscribe">
+              <input type="email" placeholder="Write E.Mail Here" class="community__input">
+              <button class="community__subscribe-btn">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           PROPERTIES: catálogo de propiedades (grid)
+           ========================================== -->
+      <section class="properties">
+        <div class="properties__grid">
+          <!-- Propiedad 01 -->
+          <article class="property-card">
+            <img src="images/house1.jpg" alt="Modern House" class="property-card__image">
+            <div class="property-card__content">
+              <h3 class="property-card__title">Modern Spaces And Complexes</h3>
+              <p class="property-card__text">
+                Lorem ipsum dolor sit amet consectetur. Id duis morbi nullam orci luctus.
+              </p>
+              <ul class="property-card__details">
+                <li>1200 Sq Ft</li>
+                <li>2 Bed Rooms</li>
+                <li>2 Car Garages</li>
+              </ul>
+              <button class="property-card__button">Book Now</button>
+            </div>
+          </article>
+
+          <!-- Propiedad 02 -->
+          <article class="property-card">
+            <img src="images/house2.jpg" alt="Modern House" class="property-card__image">
+            <div class="property-card__content">
+              <h3 class="property-card__title">Modern Spaces And Complexes</h3>
+              <p class="property-card__text">
+                Lorem ipsum dolor sit amet consectetur. Id duis morbi nullam orci luctus.
+              </p>
+              <ul class="property-card__details">
+                <li>1300 Sq Ft</li>
+                <li>3 Bed Rooms</li>
+                <li>2 Car Garages</li>
+              </ul>
+              <button class="property-card__button">Book Now</button>
+            </div>
+          </article>
+
+          <!-- Propiedad 03 -->
+          <article class="property-card">
+            <img src="images/house3.jpg" alt="Modern House" class="property-card__image">
+            <div class="property-card__content">
+              <h3 class="property-card__title">Modern Spaces And Complexes</h3>
+              <p class="property-card__text">
+                Lorem ipsum dolor sit amet consectetur. Id duis morbi nullam orci luctus.
+              </p>
+              <ul class="property-card__details">
+                <li>900 Sq Ft</li>
+                <li>2 Bed Rooms</li>
+                <li>1 Car Garage</li>
+              </ul>
+              <button class="property-card__button">Book Now</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- =================================
+           EXPERIENCE: años + descripción CTA
+           ================================= -->
+      <section class="experience">
+        <div class="experience__content">
+          <!-- Columna izquierda: título + años -->
+          <div class="experience__left">
+            <h2 class="experience__title">
+              Transforming Homes and Creating Dream Spaces
+            </h2>
+            <div class="experience__years">
+              <span class="experience__number">12</span>
+              <p class="experience__label">Years Of Experience</p>
+            </div>
+          </div>
+
+          <!-- Columna derecha: párrafos descriptivos + botón -->
+          <div class="experience__right">
+            <p class="experience__text">
+              From remodeling and new home construction to home studios and shed structures. We are passionate about helping homeowners create the spaces they’ve always dreamed of, and we have the expertise and resources to make it happen.
+            </p>
+            <p class="experience__text">
+              From remodeling and new home construction to home studios and shed structures. We are passionate about helping homeowners create the spaces they’ve always dreamed of, and we have the expertise and resources to make it happen.
+            </p>
+            <button class="experience__button">Contact Us</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SHOWCASE: bloques alternados imagen/texto
+           ========================================== -->
+      <section class="showcase">
+        <h2 class="showcase__title">Transforming Homes and Creating Dream Spaces</h2>
+
+        <div class="showcase__grid">
+          <!-- Bloque 1: imagen izquierda, texto derecha -->
+          <div class="showcase__item">
+            <img src="images/showcase1.jpg" alt="Modern Home Exterior" class="showcase__image">
+            <div class="showcase__content">
+              <h3 class="showcase__subtitle">
+                Welcome to [website name], your one-stop destination for all things home improvement,
+              </h3>
+              <p class="showcase__text">
+                From remodeling and new home construction to home studios and shed structures. We are passionate about helping homeowners create the spaces they’ve always dreamed of, and we have the expertise and resources to make it happen.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bloque 2: texto izquierda, imagen derecha -->
+          <div class="showcase__item showcase__item--reverse">
+            <div class="showcase__content">
+              <h3 class="showcase__subtitle">
+                Welcome to [website name], your one-stop destination for all things home improvement,
+              </h3>
+              <p class="showcase__text">
+                From remodeling and new home construction to home studios and shed structures. We are passionate about helping homeowners create the spaces they’ve always dreamed of, and we have the expertise and resources to make it happen.
+              </p>
+              <button class="showcase__button">Contact Us</button>
+            </div>
+            <img src="images/showcase2.jpg" alt="Luxury Home Exterior" class="showcase__image">
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================
+           FOOTER: info + enlaces
+           ====================== -->
+      <footer class="footer">
+        <!-- Newsletter del footer -->
+        <div class="footer__newsletter">
+          <input type="email" class="footer__input" placeholder="Write E.Mail Here">
+          <button class="footer__subscribe">Subscribe</button>
+        </div>
+
+        <!-- Cuerpo del footer con 3 columnas -->
+        <div class="footer__content">
+          <!-- Columna 1: logo, texto y redes sociales -->
+          <div class="footer__column">
+            <h3 class="footer__logo">FAIRWAYCLIFFS</h3>
+            <p class="footer__text">
+              Lorem ipsum dolor sit amet consectetur. Ultrices diam commodo odio tellus eget lorem.
+            </p>
+            <div class="footer__social">
+              <a href="#" class="footer__icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="footer__icon"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="footer__icon"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+
+          <!-- Columna 2: enlaces de soporte -->
+          <div class="footer__column">
+            <ul class="footer__links">
+              <li><a>Contact Us</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Help</a></li>
+              <li><a>View More</a></li>
+              <li><a">Customer Supports</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 3: enlaces de servicios -->
+          <div class="footer__column">
+            <ul class="footer__links">
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Our Reviews</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a>Benefits</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Línea legal -->
+        <p class="footer__copy">Copyright 2023</p>
+      </footer>
+
+      <!-- Script de Font Awesome para iconos sociales -->
+      <script src="https://kit.fontawesome.com/a2e0e6a43c.js" crossorigin="anonymous"></script>
+    </main>
+  </div>
+</body>
+</html>
