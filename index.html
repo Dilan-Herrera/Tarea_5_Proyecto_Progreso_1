@@ -10,16 +10,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <!-- Hojas de estilo del proyecto -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <div class="body__container">
-    <!-- =========================
-         HEADER (navegación + hero)
-         ========================= -->
+    <!-- ===HEADER (navegación + hero)=== -->
     <header class="header">
       <!-- Barra de navegación principal -->
       <nav class="nav">
@@ -31,13 +28,6 @@
           <li><a class="nav__item">About Us</a></li>
           <li><a class="nav__item">Contact Us</a></li>
         </ul>
-
-        <!-- Ícono de menú (hamburguesa) para vista móvil -->
-        <div class="nav__menu-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
       </nav>
 
       <!-- Sección hero con imagen de portada y overlay -->
@@ -47,13 +37,9 @@
       </section>
     </header>
 
-    <!-- ==============
-         CONTENIDO MAIN
-         ============== -->
+    <!-- ===CONTENIDO MAIN=== -->
     <main class="main">
-      <!-- =========================
-           PROJECTS: tarjetas de casos
-           ========================= -->
+      <!-- ===PROJECTS: tarjetas de casos=== -->
       <section class="projects">
         <div class="projects__grid">
           <!-- Tarjeta 01 -->
@@ -94,9 +80,7 @@
         </div>
       </section>
 
-      <!-- =========================
-           ABOUT: presentación empresa
-           ========================= -->
+      <!-- ===ABOUT: presentación empresa=== -->
       <section class="about">
         <!-- Imagen lateral de la sección About -->
         <div class="about__image">
@@ -116,9 +100,7 @@
         </div>
       </section>
 
-      <!-- ======================================
-           COMMUNITY: buscador + newsletter center
-           ====================================== -->
+      <!-- ===COMMUNITY: buscador + newsletter center=== -->
       <section class="community">
         <!-- Capa oscura de fondo para contraste -->
         <div class="community__overlay"></div>
@@ -163,9 +145,7 @@
         </div>
       </section>
 
-      <!-- ==========================================
-           PROPERTIES: catálogo de propiedades (grid)
-           ========================================== -->
+      <!-- ===PROPERTIES: catálogo de propiedades (grid)=== -->
       <section class="properties">
         <div class="properties__grid">
           <!-- Propiedad 01 -->
@@ -221,9 +201,7 @@
         </div>
       </section>
 
-      <!-- =================================
-           EXPERIENCE: años + descripción CTA
-           ================================= -->
+      <!-- ===EXPERIENCE: años + descripción CTA=== -->
       <section class="experience">
         <div class="experience__content">
           <!-- Columna izquierda: título + años -->
@@ -250,9 +228,7 @@
         </div>
       </section>
 
-      <!-- ==========================================
-           SHOWCASE: bloques alternados imagen/texto
-           ========================================== -->
+      <!-- ===SHOWCASE: bloques alternados imagen/texto=== -->
       <section class="showcase">
         <h2 class="showcase__title">Transforming Homes and Creating Dream Spaces</h2>
 
@@ -286,56 +262,60 @@
         </div>
       </section>
 
-      <!-- ======================
-           FOOTER: info + enlaces
-           ====================== -->
+      <!-- ===FOOTER: info + enlaces=== -->
       <footer class="footer">
-        <!-- Newsletter del footer -->
+        <!-- Imagen de fondo -->
+        <div class="footer__background"></div>
+
+        <!-- Newsletter arriba del recuadro gris -->
         <div class="footer__newsletter">
           <input type="email" class="footer__input" placeholder="Write E.Mail Here">
           <button class="footer__subscribe">Subscribe</button>
         </div>
 
-        <!-- Cuerpo del footer con 3 columnas -->
-        <div class="footer__content">
-          <!-- Columna 1: logo, texto y redes sociales -->
-          <div class="footer__column">
-            <h3 class="footer__logo">FAIRWAYCLIFFS</h3>
-            <p class="footer__text">
-              Lorem ipsum dolor sit amet consectetur. Ultrices diam commodo odio tellus eget lorem.
-            </p>
-            <div class="footer__social">
-              <a href="#" class="footer__icon"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="footer__icon"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" class="footer__icon"><i class="fab fa-twitter"></i></a>
+        <!-- Capa gris semitransparente -->
+        <div class="footer__overlay">
+          <!-- Cuerpo del footer con 3 columnas -->
+          <div class="footer__content">
+            <!-- Columna 1 -->
+            <div class="footer__column">
+              <h3 class="footer__logo">FAIRWAYCLIFFS</h3>
+              <p class="footer__text">
+                Lorem ipsum dolor sit amet consectetur. Ultrices diam commodo odio tellus eget lorem.
+              </p>
+              <div class="footer__social">
+                <a class="footer__icon"><i class="fab fa-facebook-f"></i></a>
+                <a class="footer__icon"><i class="fab fa-linkedin-in"></i></a>
+                <a class="footer__icon"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+
+            <!-- Columna 2 -->
+            <div class="footer__column">
+              <ul class="footer__links">
+                <li><a>Contact Us</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Help</a></li>
+                <li><a>View More</a></li>
+                <li><a>Customer Support</a></li>
+              </ul>
+            </div>
+
+            <!-- Columna 3 -->
+            <div class="footer__column">
+              <ul class="footer__links">
+                <li><a>Our Services</a></li>
+                <li><a>Our Reviews</a></li>
+                <li><a>Our Team</a></li>
+                <li><a>Pricing</a></li>
+                <li><a>Benefits</a></li>
+              </ul>
             </div>
           </div>
 
-          <!-- Columna 2: enlaces de soporte -->
-          <div class="footer__column">
-            <ul class="footer__links">
-              <li><a>Contact Us</a></li>
-              <li><a>About Us</a></li>
-              <li><a>Help</a></li>
-              <li><a>View More</a></li>
-              <li><a">Customer Supports</a></li>
-            </ul>
-          </div>
-
-          <!-- Columna 3: enlaces de servicios -->
-          <div class="footer__column">
-            <ul class="footer__links">
-              <li><a href="#">Our Services</a></li>
-              <li><a href="#">Our Reviews</a></li>
-              <li><a href="#">Our Team</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a>Benefits</a></li>
-            </ul>
-          </div>
+          <!-- Línea legal -->
+          <p class="footer__copy">Copyright 2023</p>
         </div>
-
-        <!-- Línea legal -->
-        <p class="footer__copy">Copyright 2023</p>
       </footer>
 
       <!-- Script de Font Awesome para iconos sociales -->
