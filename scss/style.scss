@@ -1,17 +1,3 @@
-/* =============== RESETEO GLOBAL =============== */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: 'Work Sans', sans-serif;
-  background-color: #fff;
-  color: #111;
-}
-
 /* =============== HEADER Y NAVEGACIÓN =============== */
 .header {
   position: relative;
